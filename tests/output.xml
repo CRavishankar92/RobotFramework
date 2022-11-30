@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.1 (Python 3.10.6 on win32)" generated="20221127 10:45:22.266" rpa="false" schemaversion="3">
+<suite id="s1" name="Test1" source="C:\Users\RACH1084\PycharmProjects\RobotFramework\tests\test1.robot">
+<test id="s1-t1" name="Validate Successful Login" line="7">
+<kw name="open the browser with the mortgage payment url">
+<kw name="Create Webdriver" library="SeleniumLibrary">
+<arg>chrome</arg>
+<arg>executable_path:C:\Users\RACH1084\Downloads\chromedriver_win32\chromedriver</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<msg timestamp="20221127 10:45:23.476" level="INFO">Creating an instance of the chrome WebDriver.</msg>
+<msg timestamp="20221127 10:45:23.476" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20221127 10:45:23.476" level="FAIL">TypeError: 'module' object is not callable</msg>
+<status status="FAIL" starttime="20221127 10:45:23.472" endtime="20221127 10:45:23.500"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>https://rahulshettyacademy.com/loginpagePractise/</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="NOT RUN" starttime="20221127 10:45:23.500" endtime="20221127 10:45:23.500"/>
+</kw>
+<status status="FAIL" starttime="20221127 10:45:23.472" endtime="20221127 10:45:23.500"/>
+</kw>
+<kw name="fill the login form">
+<status status="NOT RUN" starttime="20221127 10:45:23.508" endtime="20221127 10:45:23.508"/>
+</kw>
+<kw name="wait until it checks and display error message">
+<status status="NOT RUN" starttime="20221127 10:45:23.524" endtime="20221127 10:45:23.524"/>
+</kw>
+<kw name="verify error message is correct">
+<status status="NOT RUN" starttime="20221127 10:45:23.532" endtime="20221127 10:45:23.532"/>
+</kw>
+<status status="FAIL" starttime="20221127 10:45:23.472" endtime="20221127 10:45:23.532">TypeError: 'module' object is not callable</status>
+</test>
+<doc>To validate login form</doc>
+<status status="FAIL" starttime="20221127 10:45:22.278" endtime="20221127 10:45:23.540"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Test1">Test1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
