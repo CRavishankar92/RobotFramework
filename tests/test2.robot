@@ -3,7 +3,7 @@ Documentation  To validate the login form
 Library  SeleniumLibrary
 Library     Collections
 Test Setup  Open the browser with mortgage payment url
-#Test Teardown   Close browser session
+Test Teardown   Close browser session
 Resource  resource.robot
 
 *** Variables ***
@@ -11,10 +11,10 @@ ${Error_message_login}  css:.alert-danger    #Global variables
 ${shop_page_load}       css:.nav-link
 
 *** Test Cases ***
-#Validate unsuccessful Login
-#   Fill the login form     ${user_name}    ${invalid_password}
-#    wait until element is located in the page      ${Error_message_login}
-#   verify error message is correct
+Validate unsuccessful Login
+   Fill the login form     ${user_name}    ${invalid_password}
+   wait until element is located in the page      ${Error_message_login}
+   verify error message is correct
 
 Validate cards display in the shopping page
     Fill the login form     ${user_name}    ${valid_password}
